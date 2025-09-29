@@ -1,28 +1,9 @@
-import QuestionCard from '@/components/ui/QuestionCard';
+import QuestionContainer from '@/components/layout/QuestionContainer';
 
 export default function Learners() {
   return (
     <div className="">
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
-      <QuestionCard />
+      <QuestionContainer />
     </div>
   );
 }
