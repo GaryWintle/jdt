@@ -1,26 +1,66 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Primary Brand Colors */
+  --color-primary-400: #cbd8e9;
+  --color-primary-600: #4f7192;
+
+  /* Neutral/Gray Scale */
+  --color-neutral-50: #f7f9fa;
+  --color-neutral-100: #eff2f5;
+  --color-neutral-200: #e1e6eb;
+  --color-neutral-300: #d7dbe0;
+  --color-neutral-500: #a8b3bf;
+  --color-neutral-700: #65727f;
+
+  /* Test Colors */
+  --color-true: #45e0b9;
+  --color-false: #fd5b42;
+  --color-warning: #f6c13c;
+
+  /* Typography */
+  --font-family: var(--font-plex-sans), system-ui, sans-serif;
+
+  /* Custom Shadows */
+  --shadow-module: inset 0 2px 0 0 var(--color-neutral-50),
+    inset 0 -2px 0 0 var(--color-primary-600),
+    inset 0 30px 0 0 var(--color-neutral-100),
+    0 18px 19px 0 var(--color-primary-600), 0 2px 5px 0 var(--color-primary-600);
+
+  --shadow-button: inset 0 2px 1px 0 var(--color-primary-600),
+    inset 0 2px 0 0 var(--color-neutral-50),
+    inset 0 -1px 1px 0 var(--color-primary-600),
+    -4px -4px 4px 0 var(--color-neutral-50),
+    0 3px 4px 0 var(--color-primary-600), 0 1px 2px 0 var(--color-primary-600);
+
+  --shadow-button-hover: inset 0 2px 0 0 var(--color-neutral-50),
+    inset 0 -2px 0 0 var(--color-primary-600),
+    -4px -4px 4px 0 var(--color-neutral-50),
+    0 6px 8px 0 var(--color-primary-600), 0 2px 4px 0 var(--color-primary-600);
+
+  --shadow-quiz-card: inset 0 -1px 3px 0 var(--color-primary-600),
+    -2px -2px 2px 0 var(--color-neutral-200),
+    -2px -4px 4px 0 var(--color-neutral-200),
+    0 3px 9px 0 var(--color-primary-600), 0 28px 28px 0 var(--color-primary-600),
+    0 7px 15px 0 var(--color-primary-600);
+
+  --shadow-quiz-card-button: inset 0 -1px 3px 0 var(--color-primary-600),
+    inset 0 -2px 0 0 var(--color-primary-400),
+    0 3px 1px 0 var(--color-primary-600),
+    -2px -2px 2px 0 var(--color-neutral-200),
+    -2px -4px 4px 0 var(--color-neutral-200),
+    0 3px 9px 0 var(--color-primary-400), 0 5px 10px 0 var(--color-primary-600),
+    0 7px 15px 0 var(--color-primary-600);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .pt-safe-plus {
+    padding-top: calc(env(safe-area-inset-top) + 1rem);
+  }
+  .pt-safe-header {
+    padding-top: calc(env(safe-area-inset-top) + 4rem);
+  }
 }
