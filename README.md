@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Name
 
-## Getting Started
+_Driving Test App designed to help people living in Japan pass their written driving tests._
 
-First, run the development server:
+![Early Project Screenshot](./public/JDT-early-screenshot.png)
+
+## 🚀 Live Demo
+
+[View Live Site](https://jdt.vercel.app/) | [GitHub Repository](https://github.com/GaryWintle/jdt.git)
+
+## 📋 Overview
+
+This project is specifically made to help people who are living in Japan practice for their written driving exam. When I studied for my exams, using the huge outdated sheets of paper provided were a hassle, so I thought making this would help people out.
+
+**Key Features:**
+
+- 🎨 Beautiful, responsive design with Tailwind CSS
+- ⚡ Fast performance with Next.js optimization
+- 📱 Mobile-first responsive design
+- 🔒 Secure and accessible
+
+## 🛠️ Built With
+
+- **Frontend:** Next.js 14, React, TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Tools:** ESLint, Prettier
+
+## 🎯 What I Learned
+
+- How to implement server-side rendering with Next.js
+- Advanced Tailwind CSS techniques for responsive design
+- Component architecture and reusable design patterns
+- Performance optimization strategies
+- Accessibility best practices
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/GaryWintle/jdt.git
+
+# Navigate to project directory
+cd repo-name
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── learners/           # Route: /learners
+│   │   ├── layout.tsx          # Root layout
+│   │   ├── page.tsx            # Homepage
+│   │   └── globals.css         # Global styles
+│   ├── components/             # Reusable UI components
+│   │   ├── layout/             # Layout components
+│   │   │   ├── MainHeader.tsx
+│   │   │   └── TestFooterMenu.tsx
+│   │   └── ui/                 # UI components
+│   │       ├── QuestionCard.tsx
+│   │       └── QuestionCardButton.tsx
+│   ├── hooks/                  # Custom React hooks
+│   └── lib/                    # Utility functions
+├── public/                     # Static assets
+│   ├── JDT-logo.svg
+│   └── [icons & images]
+├── tailwind.config.ts          # Tailwind configuration
+└── package.json
+```
 
-## Learn More
+## 🎨 Design Decisions
 
-To learn more about Next.js, take a look at the following resources:
+- **Typography:** Chose clean, modern fonts for readability
+- **Color Scheme:** Implemented accessible color contrast ratios
+- **Layout:** Mobile-first approach with progressive enhancement
+- **Performance:** Optimized images and implemented lazy loading
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Features in Detail
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Responsive Navigation
 
-## Deploy on Vercel
+Clean, accessible navigation that works across all devices with smooth animations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Performance Optimizations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js Image component for optimized loading
+- Component-level code splitting
+- SEO-friendly meta tags
+
+## 🚀 Deployment
+
+This project is deployed on Vercel with automatic deployments from the main branch.
+
+## 📈 Future Improvements
+
+- [ ] Add dark mode toggle
+- [ ] Kanji Driving-related Flashcard Test
+
+## 🌝 Give me a shout!
+
+- **Portfolio:** [wintle.dev](https://wintle.dev)
+- **LinkedIn:** [My Linkedin](https://www.linkedin.com/in/gary-wintle-9168962/)
+
+---
+
+\_Built with ❤️ by Gary Wintle - a working artist and aspiring developer

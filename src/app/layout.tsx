@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
 import TestFooterMenu from '@/components/layout/TestFooterMenu';
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={plexSans.variable}>
       <body className="bg-primary-400 pt-safe-header">
+        <SpeedInsights />
         <MainHeader />
         {children}
         <TestFooterMenu />
