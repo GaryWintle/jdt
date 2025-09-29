@@ -14,6 +14,7 @@ const plexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: 'Japan Driving Test',
   description: 'Make passing your Driving test in Japan a bit easier!',
+  themeColor: '#eff2f5',
 };
 
 export default function RootLayout({

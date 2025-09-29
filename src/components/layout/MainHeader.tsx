@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const MainHeader = () => {
   return (
-    <header className="pt-safe-plus fixed w-full top-0 pb-4 pt-12 bg-gradient-to-b from-neutral-100/60 to-neutral-300/85 shadow-module/20 backdrop-blur-md">
+    <header className="pt-safe-plus fixed w-full top-0 pb-4 pt-12 bg-gradient-to-b from-neutral-100 to-neutral-300/60 shadow-module/20 backdrop-blur-md">
       <div className="max-w-[750px] mx-auto px-6 flex items-center justify-between">
         <div className="flex gap-1">
           <Link href="/">
