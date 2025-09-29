@@ -1,4 +1,4 @@
-# Project Name
+# Japan Driving Test
 
 _Driving Test App designed to help people living in Japan pass their written driving tests._
 
