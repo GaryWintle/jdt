@@ -2,17 +2,7 @@ import Image from 'next/image';
 
 import { MouseEventHandler } from 'react';
 
-type QuizCardButtonProps = {
-  src: string;
-  alt: string;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-};
-
-const QuestionCardButton: React.FC<QuizCardButtonProps> = ({
-  src,
-  alt,
-  onClick,
-}) => {
+const QuestionCardButton = ({ src, alt, onClick }) => {
   return (
     <button
       onClick={onClick}

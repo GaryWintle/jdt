@@ -28,7 +28,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/layout/QuestionContainer.jsx",
-    "src/components/ui/QuestionCard.jsx"
+    "src/components/ui/QuestionCard.jsx",
+    "src/components/ui/QuestionCardButton.jsx",
+    "src/app/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
