@@ -27,10 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className="bg-primary-400 pt-safe-header">
+      <body className="bg-primary-400">
         <SpeedInsights />
         <MainHeader />
-        {children}
+        <div className="pt-safe-header">
+          {children}
+        </div>
         <TestFooterMenu />
       </body>
     </html>

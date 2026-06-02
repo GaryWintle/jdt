@@ -15,7 +15,7 @@ import { Button } from '@/components/ui/button';
 
 const SearchQuestion = () => {
   return (
-    <Drawer direction="right">
+    <Drawer direction="bottom">
       <DrawerTrigger>Open</DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
