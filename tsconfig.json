@@ -30,7 +30,8 @@
     "src/components/layout/QuestionContainer.jsx",
     "src/components/ui/QuestionCard.jsx",
     "src/components/ui/QuestionCardButton.jsx",
-    "src/app/page.jsx"
+    "src/app/page.jsx",
+    "src/components/layout/TestFooterMenu.jsx"
   ],
   "exclude": ["node_modules"]
 }

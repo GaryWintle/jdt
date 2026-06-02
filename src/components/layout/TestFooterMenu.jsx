@@ -1,13 +1,35 @@
-import '@/app/globals.css';
+// import '@/app/globals.css';
 import TestFooterButton from '@/components/ui/TestFooterButton';
+import {
+  Drawer,
+  DrawerPortal,
+  DrawerOverlay,
+  DrawerTrigger,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerTitle,
+  DrawerDescription,
+} from '@/components/ui/drawer';
+import { Button } from '@/components/ui/button';
 
-const TestFooterMenu: React.FC = () => {
+const TestFooterMenu = () => {
   return (
     <div className="fixed bottom-[-10px] left-0 w-full h-40 bg-gradient-to-t from-primary-600 pointer-events-none pb-safe">
       <div className="flex justify-center gap-4.5 sm:gap-3.5 md:gap-2.5 items-center absolute bottom-3 left-1/2 -translate-x-1/2 mb-4 py-3 px-4.5 rounded-full bg-gradient-to-b from-neutral-100/50 to-neutral-300/75 backdrop-blur-md shadow-module/20 pointer-events-auto mb-safe-plus-4">
         <TestFooterButton src="/icon-timer.svg" alt="Show Test Timer" />
         <TestFooterButton src="/icon-check.svg" alt="Finished Test?" />
-        <TestFooterButton src="/icon-search.svg" alt="Show Search Chart" />
+        <Drawer
+          direction="right"
+          shouldScaleBackground={false}
+          setBackgroundColorOnScale={false}
+        >
+          <DrawerTrigger asChild>
+            <TestFooterButton src="/icon-search.svg" alt="Show Search Chart" />
+          </DrawerTrigger>
+          <DrawerContent>{/* navigator content here */}</DrawerContent>
+        </Drawer>
       </div>
     </div>
   );
